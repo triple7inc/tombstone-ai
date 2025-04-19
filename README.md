@@ -117,7 +117,7 @@ PRs welcome for bugfixes, new bots, or improvements. Use `BlankScript` and `Blan
 
 Tombstone AI is already fully functional as a proof-of-concept and actively used. All included bot scripts are built on the same extensible interface system, and the HUD allows managing them live in-game.
 
-Below is a screenshot of the AI HUD in action, listing multiple bots and displaying detailed debug info:
+Below is a screenshot of the AI in action:
 
 ![Powerfisher](https://i.imgur.com/uJmcMBy.gif)
 
