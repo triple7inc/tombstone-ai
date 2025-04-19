@@ -42,6 +42,7 @@ Tombstone AI is a modular MelonLoader mod for Tombstone MMO. It provides a real-
 /Scripts
   ├── BlankScript.cs
   ├── BlankScriptCombat.cs
+  ├── ...
   └── YourCustomBot.cs
 /Tests
   └── Hooks.cs
