@@ -113,6 +113,20 @@ PRs welcome for bugfixes, new bots, or improvements. Use `BlankScript` and `Blan
 
 ---
 
+## 🧪 Proof-Of-Concept
+
+Tombstone AI is already fully functional as a proof-of-concept and actively used. All included bot scripts are built on the same extensible interface system, and the HUD allows managing them live in-game.
+
+Below is a screenshot of the AI HUD in action, listing multiple bots and displaying detailed debug info:
+
+![Powerfisher](https://i.imgur.com/uJmcMBy.gif)
+
+You can create your own bot script, add it to the list, and immediately run it in-game.
+
+The system supports tools, combat bots, skilling bots, and any logic you can script through the game's exposed Il2Cpp API.
+
+---
+
 ## 📄 License
 
 MIT License
