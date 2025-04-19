@@ -119,7 +119,7 @@ Tombstone AI is already fully functional as a proof-of-concept and actively used
 
 Below is a screenshot of the AI in action:
 
-![Powerfisher](https://i.imgur.com/uJmcMBy.gif)
+![Powerfisher](./powerfish.gif)
 
 You can create your own bot script, add it to the list, and immediately run it in-game.
 
