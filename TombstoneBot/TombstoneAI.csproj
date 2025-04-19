@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33434F52-D3A2-406C-908B-4BE59E6C5CC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TombstoneAI</RootNamespace>
+    <AssemblyName>TombstoneAI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppFishNet.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2CppFishNet.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppgooby.Attributes.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2Cppgooby.Attributes.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppgooby.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2Cppgooby.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppgooby.Core.Playflow">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2Cppgooby.Core.Playflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppgooby.SpritesheetAnimator, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2Cppgooby.SpritesheetAnimator.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppgooby.StatusEffects, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2Cppgooby.StatusEffects.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppIngameDebugConsole.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2CppIngameDebugConsole.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Common, Version=1.4.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppInterop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime, Version=1.4.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTombstone">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2CppTombstone.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTombstone.Client">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2CppTombstone.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTombstone.Extensions">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2CppTombstone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTombstone.Gangs">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2CppTombstone.Gangs.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTombstone.HouseOfBones">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2CppTombstone.HouseOfBones.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTombstone.Partying">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2CppTombstone.Partying.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppWitchslayer, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Il2CppWitchslayer.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\net6\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader.NativeHost">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\net6\MelonLoader.NativeHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Library\Datastub.cs" />
+    <Compile Include="Library\Bank.cs" />
+    <Compile Include="Library\DNID.cs" />
+    <Compile Include="Library\Doopstrap.cs" />
+    <Compile Include="Scripts\StopAllBots.cs" />
+    <Compile Include="Scripts\EbonyTreeBanker.cs" />
+    <Compile Include="Scripts\DayTimeChanger.cs" />
+    <Compile Include="Test\Hooks.cs" />
+    <Compile Include="Library\IBotScriptCombat.cs" />
+    <Compile Include="Library\Progression.cs" />
+    <Compile Include="Library\Timer.cs" />
+    <Compile Include="Library\World.cs" />
+    <Compile Include="Library\IBotScript.cs" />
+    <Compile Include="Library\DoopstrapV1.cs" />
+    <Compile Include="Library\Equipment.cs" />
+    <Compile Include="Library\Inventory.cs" />
+    <Compile Include="Library\Logger.cs" />
+    <Compile Include="Library\Utilities.cs" />
+    <Compile Include="Library\Player.cs" />
+    <Compile Include="Library\BotGUI.cs" />
+    <Compile Include="Library\Position.cs" />
+    <Compile Include="Scripts\BenchShaft.cs" />
+    <Compile Include="Scripts\BlankScriptCombat.cs" />
+    <Compile Include="Scripts\PowerKillCombat.cs" />
+    <Compile Include="Scripts\PowerTrapFish.cs" />
+    <Compile Include="Scripts\BlankScript.cs" />
+    <Compile Include="Scripts\TreeShaft.cs" />
+    <Compile Include="TombstoneBot.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="notes.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Copy SourceFiles="$(TargetDir)TombstoneAI.dll" DestinationFolder="C:\Program Files (x86)\Steam\steamapps\common\Tombstone MMO\app\Mods" />
+  </Target>
+</Project>
