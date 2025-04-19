@@ -74,8 +74,8 @@ private protected string[] bots = new string[] {
 
 ### Available Interfaces
 
-All bots must implement `IBotScript`. For combat logic, implement `IBotScriptCombat`.
-For tool logic, implement `IToolScript`.
+All bots must implement `BotScriptBase`. For combat logic, implement `CombatBotScriptBase`.
+For tool logic, implement `ToolScriptBase`.
 
 ---
 
